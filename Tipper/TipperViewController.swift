@@ -64,6 +64,8 @@ class TipperViewController: UIViewController {
             selector: "applicationWillResignActive:",
             name: UIApplicationWillResignActiveNotification,
             object: nil)
+        
+        updateValues()
     }
     
     override func viewDidDisappear(animated:Bool) {
