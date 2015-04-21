@@ -87,7 +87,6 @@ class TipperViewController: UIViewController {
         let total = billAmount + tip
         
         let formatter = NSNumberFormatter()
-        let locale = NSLocale.currentLocale()
         
         formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
         
