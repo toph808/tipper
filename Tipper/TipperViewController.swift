@@ -81,17 +81,18 @@ class TipperViewController: UIViewController {
     }
     
     func updateValues() {
-        var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        let billAmount = (billField.text as NSString).doubleValue
+        let tip = billAmount * tipPercentage
+        let total = billAmount + tip
         
-        var billAmount = (billField.text as NSString).doubleValue
-        var tip = billAmount * tipPercentage
-        var total = billAmount + tip
+        let formatter = NSNumberFormatter()
+        let locale = NSLocale.currentLocale()
         
-        tipLabel.text = "$\(tip)"
-        totalLabel.text = "$\(total)"
+        formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
         
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
+        tipLabel.text = formatter.stringFromNumber(tip as NSNumber)
+        totalLabel.text = formatter.stringFromNumber(total as NSNumber)
         
         if (billAmount != 0) {
             fadeLabelsIn()
