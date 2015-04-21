@@ -16,17 +16,13 @@ class TipperViewController: UIViewController {
     @IBOutlet weak var equalsLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var blurView: UIVisualEffectView!
     
     let tipPercentages = [0.15, 0.2, 0.22]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tipLabel.text = "$0.00"
-        totalLabel.text = "$0.00"
-        
-        tipLabel.alpha = 0.0
-        totalLabel.alpha = 0.0
     }
     
     func applicationDidBecomeActive(notification: NSNotification) {

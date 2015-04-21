@@ -14,6 +14,7 @@
 		6D6982081AD7BE7E00CE6FCE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D6982061AD7BE7E00CE6FCE /* LaunchScreen.xib */; };
 		6D6982141AD7BE7E00CE6FCE /* TipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6982131AD7BE7E00CE6FCE /* TipperTests.swift */; };
 		6D69821E1ADC2DFC00CE6FCE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D69821D1ADC2DFC00CE6FCE /* SettingsViewController.swift */; };
+		6DF543CF1AE6C94D00FB8050 /* restaurant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6DF543CE1AE6C94D00FB8050 /* restaurant.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		6D6982121AD7BE7E00CE6FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D6982131AD7BE7E00CE6FCE /* TipperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipperTests.swift; sourceTree = "<group>"; };
 		6D69821D1ADC2DFC00CE6FCE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6DF543CE1AE6C94D00FB8050 /* restaurant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = restaurant.jpg; path = ../../Pictures/restaurant.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		6D6981FA1AD7BE7E00CE6FCE /* Tipper */ = {
 			isa = PBXGroup;
 			children = (
+				6DF543CD1AE6C8C200FB8050 /* Resources */,
 				6D6981FD1AD7BE7E00CE6FCE /* AppDelegate.swift */,
 				6D6981FF1AD7BE7E00CE6FCE /* TipperViewController.swift */,
 				6D6982011AD7BE7E00CE6FCE /* Main.storyboard */,
@@ -113,6 +116,14 @@
 				6D6982121AD7BE7E00CE6FCE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DF543CD1AE6C8C200FB8050 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DF543CE1AE6C94D00FB8050 /* restaurant.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 			files = (
 				6D6982031AD7BE7E00CE6FCE /* Main.storyboard in Resources */,
 				6D6982081AD7BE7E00CE6FCE /* LaunchScreen.xib in Resources */,
+				6DF543CF1AE6C94D00FB8050 /* restaurant.jpg in Resources */,
 				6D6982051AD7BE7E00CE6FCE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +421,7 @@
 				6D6982191AD7BE7E00CE6FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D69821A1AD7BE7E00CE6FCE /* Build configuration list for PBXNativeTarget "TipperTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				6D69821C1AD7BE7E00CE6FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

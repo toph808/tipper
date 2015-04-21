@@ -16,6 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UkQ-X0-diK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPr-YN-qjv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HGq-1D-Gg6">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tOa-6e-16z">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Euk-kV-bJ0">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2D-i3-9K6">
                                 <rect key="frame" x="16" y="166" width="23" height="47"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
@@ -29,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$2000.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwA-jP-T3W">
-                                <rect key="frame" x="43" y="224" width="261" height="54.5"/>
+                                <rect key="frame" x="43" y="224" width="261" height="55"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="52"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,13 +87,18 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6X8-Aa-Bjl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="06s-cu-ZVb"/>
+                            <constraint firstItem="xPr-YN-qjv" firstAttribute="top" secondItem="UkQ-X0-diK" secondAttribute="top" id="3r6-RA-9iv"/>
                             <constraint firstItem="B2D-i3-9K6" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="166" id="8vp-rC-ejk"/>
+                            <constraint firstItem="xPr-YN-qjv" firstAttribute="leading" secondItem="UkQ-X0-diK" secondAttribute="leading" id="9bf-uf-WGh"/>
                             <constraint firstAttribute="trailing" secondItem="6X8-Aa-Bjl" secondAttribute="trailing" constant="279" id="B1T-sM-q2D"/>
+                            <constraint firstItem="UkQ-X0-diK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="B4E-ld-QBk"/>
                             <constraint firstItem="Zfe-ya-9Le" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="32" id="BUS-3j-ez9"/>
                             <constraint firstItem="Ti8-mw-jyk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="43" id="Egp-Et-wG1"/>
                             <constraint firstAttribute="trailing" secondItem="tvR-8c-b7C" secondAttribute="trailing" constant="31" id="OAn-QR-zdI"/>
                             <constraint firstItem="Ti8-mw-jyk" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="171" id="OoK-xS-7Yf"/>
                             <constraint firstItem="jwA-jP-T3W" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="224" id="Sj0-t2-8cq"/>
+                            <constraint firstItem="xPr-YN-qjv" firstAttribute="trailing" secondItem="UkQ-X0-diK" secondAttribute="trailing" id="TVT-2Q-FT7"/>
+                            <constraint firstItem="UkQ-X0-diK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Vv4-zp-ynV"/>
                             <constraint firstItem="jwA-jP-T3W" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="43" id="VyK-XF-Xlj"/>
                             <constraint firstItem="tvR-8c-b7C" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="32" id="XUE-eA-Q3T"/>
                             <constraint firstAttribute="trailing" secondItem="Zfe-ya-9Le" secondAttribute="trailing" constant="16" id="YiQ-lv-W7v"/>
@@ -78,8 +106,11 @@
                             <constraint firstItem="Zfe-ya-9Le" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="81" id="evb-dV-8sb"/>
                             <constraint firstAttribute="trailing" secondItem="Ti8-mw-jyk" secondAttribute="trailing" constant="16" id="hFn-qe-eBS"/>
                             <constraint firstItem="B2D-i3-9K6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="hMX-Yj-i95"/>
+                            <constraint firstItem="UkQ-X0-diK" firstAttribute="centerX" secondItem="tvR-8c-b7C" secondAttribute="centerX" id="l8x-Me-KHg"/>
                             <constraint firstItem="6X8-Aa-Bjl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="226" id="paA-OK-wjA"/>
+                            <constraint firstItem="xPr-YN-qjv" firstAttribute="bottom" secondItem="eta-h3-EtJ" secondAttribute="top" id="xET-IQ-RMy"/>
                             <constraint firstAttribute="trailing" secondItem="jwA-jP-T3W" secondAttribute="trailing" constant="16" id="zXI-6j-vRE"/>
+                            <constraint firstItem="UkQ-X0-diK" firstAttribute="bottom" secondItem="eta-h3-EtJ" secondAttribute="top" id="zk4-SC-tyY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tNl-tP-Mse">
@@ -90,7 +121,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="backgroundImageView" destination="UkQ-X0-diK" id="TA9-Cg-M1s"/>
                         <outlet property="billField" destination="Zfe-ya-9Le" id="iiX-7T-q3R"/>
+                        <outlet property="blurView" destination="xPr-YN-qjv" id="HAO-50-kmg"/>
                         <outlet property="equalsLabel" destination="6X8-Aa-Bjl" id="DGr-aY-mXT"/>
                         <outlet property="plusLabel" destination="B2D-i3-9K6" id="3vU-xm-bue"/>
                         <outlet property="tipControl" destination="tvR-8c-b7C" id="HhV-pd-w69"/>
@@ -162,6 +195,9 @@
             <point key="canvasLocation" x="375" y="423"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="restaurant.jpg" width="800" height="532"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
