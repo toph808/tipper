@@ -5,7 +5,7 @@ This is a Tip Calculator application for iOS submitted as the pre-assignment req
 
 Note: This was tested on the iPhone 5, 6 and 6 Plus in the Portrait orientation. Other screen sizes and the Landscape orientation may not be supported.
 
-Time spent: 5 hours total
+Time spent: 8 hours total
 
 Completed:
 
