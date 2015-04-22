@@ -23,6 +23,8 @@ class TipperViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tipControl.tintColor = UIColor.whiteColor()
     }
     
     func applicationDidBecomeActive(notification: NSNotification) {
